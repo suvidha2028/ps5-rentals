@@ -1,0 +1,123 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0a0a0a;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background: linear-gradient(90deg, #1a1a2e, #16213e);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1.glow {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0 0 10px #00aaff, 0 0 20px #00aaff;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #00aaff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Hero Section */
+.hero {
+    padding: 50px 20px;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1.5s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* PS5 Image Animation */
+.ps5-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+#ps5-image {
+    width: 250px;
+    animation: slideInLeft 1.5s ease-in-out;
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Game Section */
+.game-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.game {
+    background: #1a1a2e;
+    padding: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.game:hover {
+    transform: scale(1.1);
+}
+
+/* Book Now Button */
+.book-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #00aaff;
+    color: #fff;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.book-btn:hover {
+    background: #ffcc00;
+    color: #000;
+}
